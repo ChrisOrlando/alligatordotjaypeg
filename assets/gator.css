@@ -1,0 +1,40 @@
+body {
+	background-color:#000;
+	background-image:url('alligator.jpg');
+	overflow-x:scroll;
+	overflow-y:scroll;
+}
+
+img {
+	animation: gator 25s;
+	-webkit-animation: gator 25s;
+	animation-iteration-count: infinite;
+	-webkit-animation-iteration-count: infinite;
+}
+
+@keyframes gator {
+	from { 	transform:rotate(0deg);
+        	-moz-transform:rotate(0deg);
+        	-webkit-transform:rotate(0deg);}
+	to {
+		transform:rotate(360deg);
+		-moz-transform:rotate(360deg);
+		-webkit-transform:rotate(360deg);}
+}
+
+@-webkit-keyframes gator {
+        from {  transform:rotate(0deg);
+                -moz-transform:rotate(0deg);
+                -webkit-transform:rotate(0deg);}
+        to {
+            	transform:rotate(360deg);
+                -moz-transform:rotate(360deg);
+                -webkit-transform:rotate(360deg);}
+}
+
+#gator { 
+	border-radius: 400px;
+	display:block;
+	margin-left: auto;
+	margin-right: auto;
+}
